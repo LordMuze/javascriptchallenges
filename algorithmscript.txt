@@ -1,0 +1,54 @@
+I hope this book and list will provide you with ``the Right Stuff'' to be an algorithm designer. And I hope it prevents you from smacking into any mountains along the way.
+1.	Do I really understand the problem?
+
+1.	What exactly does the input consist of?
+2.	What exactly are the desired results or output?
+3.	Can I construct an example input small enough to solve by hand? What happens when I try to solve it?
+4.	How important is it to my application that I always find an exact, optimal answer? Can I settle for something that is usually pretty good?
+5.	How large will a typical instance of my problem be? Will I be working on 10 items? 1,000 items? 1,000,000 items?
+6.	How important is speed in my application? Must the problem be solved within one second? One minute? One hour? One day?
+7.	How much time and effort can I invest in implementing my algorithm? Will I be limited to simple algorithms that can be coded up in a day, or do I have the freedom to experiment with a couple of approaches and see which is best?
+8.	Am I trying to solve a numerical problem? A graph algorithm problem? A geometric problem? A string problem? A set problem? Might my problem be formulated in more than one way? Which formulation seems easiest?
+
+2.	Can I find a simple algorithm or heuristic for the problem?
+
+1.	Can I find an algorithm to solve my problem correctly by searching through all subsets or arrangements and picking the best one?
+
+1.	If so, why am I sure that this algorithm always gives the correct answer?
+2.	How do I measure the quality of a solution once I construct it?
+3.	Does this simple, slow solution run in polynomial or exponential time? Is my problem small enough that this brute-force solution will suffice?
+4.	If I can't find a slow, guaranteed correct algorithm, why am I certain that my problem is sufficiently well-defined to have a correct solution?
+
+2.	Can I solve my problem by repeatedly trying some simple rule, like picking the biggest item first? The smallest item first? A random item first?
+
+1.	If so, on what types of inputs does this heuristic work well? Do these correspond to the data that might arise in my application?
+
+2.	On what types of inputs does this heuristic work badly? If no such examples can be found, can I show that it always works well?
+3.	How fast does my heuristic come up with an answer? Does it have a simple implementation?
+
+3.	Is my problem in the catalog of algorithmic problems in the back of this book?
+
+1.	If it is, what is known about the problem? Is there an implementation available that I can use?
+2.	If I don't see my problem, did I look in the right place? Did I browse through all the pictures? Did I look in the index under all possible keywords?
+3.	Are there relevant resources available on the World-Wide Web? Did I do a Lycos, Alta Vista, or Yahoo search? Did I go to the WWW page associated with this book, ?
+
+4.	Are there special cases of the problem that I know how to solve exactly?
+
+1.	Can I solve the problem efficiently when I ignore some of the input parameters?
+2.	What happens when I set some of the input parameters to trivial values, such as 0 or 1? Does the problem become easier to solve?
+3.	Can I simplify the problem to the point where I can solve it efficiently? Is the problem now trivial or still interesting?
+4.	Once I know how to solve a certain special case, why can't this be generalized to a wider class of inputs?
+5.	Is my problem a special case of a more general problem in the catalog?
+
+5.	Which of the standard algorithm design paradigms are most relevant to my problem?
+
+1.	Is there a set of items that can be sorted by size or some key? Does this sorted order make it easier to find the answer?
+2.	Is there a way to split the problem in two smaller problems, perhaps by doing a binary search? How about partitioning the elements into big and small, or left and right? Does this suggest a divide-and-conquer algorithm?
+3.	Do the input objects or desired solution have a natural left-to-right order, such as characters in a string, elements of a permutation, or the leaves of a tree? If so, can I use dynamic programming to exploit this order?
+4.	Are there certain operations being repeatedly done on the same data, such as searching it for some element, or finding the largest/smallest remaining element? If so, can I use a data structure to speed up these queries? What about a dictionary/hash table or a heap/priority queue?
+5.	Can I use random sampling to select which object to pick next? What about constructing many random configurations and picking the best one? Can I use some kind of directed randomness like simulated annealing in order to zoom in on the best solution?
+6.	Can I formulate my problem as a linear program? How about an integer program?
+7.	Does my problem seem something like satisfiability, the traveling salesman problem, or some other NP-complete problem? If so, might the problem be NP-complete and thus not have an efficient algorithm? Is it in the problem list in the back of Garey and Johnson [GJ79]?
+6.	Am I still stumped?
+1.	Am I willing to spend money to hire an expert to tell me what to do? If so, check out the professional consulting services mentioned in Section  .
+2.	Why don't I go back to the beginning and work through these questions again? Did any of my answers change during my latest trip through the list?

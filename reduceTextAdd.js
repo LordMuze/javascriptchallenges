@@ -1,0 +1,1 @@
+var averageRating = watchList.filter(x => x.Director === “Christopher Nolan”).map(x => Number(x.imdbRating)).reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === “Christopher Nolan”).length;
